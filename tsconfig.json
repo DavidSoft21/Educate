@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es5",  
+      "module": "commonjs", 
+      "outDir": "./static/js"
+    },
+    "include": [
+      "./src/**/*",
+    ],
+    "exclude": [
+      "node_modules",
+      "static/js"
+    ]
+}

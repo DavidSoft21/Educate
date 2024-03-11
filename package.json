@@ -1,0 +1,41 @@
+{
+    "name": "educate",
+    "version": "1.0.0",
+    "description": "Aplicacion que permite el registro de asistencia escolar de los estudiantes de una entidad educativa",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "build": "tsc && npx eslint ./**/*.js --fix && npx eslint ./**/*.ts --fix",
+        "pylint": "/usr/local/bin/pylint ./**/*.py"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DavidSoft21/Educate.git"
+    },
+    "keywords": [
+        "educate",
+        "asistencia",
+        "registro"
+    ],
+    "author": "DavidSoft21",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/DavidSoft21/Educate/issues"
+    },
+    "homepage": "https://github.com/DavidSoft21/Educate#readme",
+    "dependencies": {
+        "standard": "^17.1.0",
+        "typescript": "^4.7.4"
+    },
+    "eslintConfig": {
+        "extends": [
+            "./node_modules/standard/eslintrc.json"
+        ]
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^7.1.1",
+        "@typescript-eslint/parser": "^7.1.1",
+        "eslint": "^8.57.0"
+    }
+}
