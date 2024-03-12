@@ -2,13 +2,12 @@
     "compilerOptions": {
       "target": "es5",  
       "module": "commonjs", 
-      "outDir": "./static/js"
+      "outDir": "./dist",
     },
     "include": [
-      "./src/**/*",
+      "../js/**/*.ts"
     ],
     "exclude": [
-      "node_modules",
-      "static/js"
+      "node_modules"
     ]
 }

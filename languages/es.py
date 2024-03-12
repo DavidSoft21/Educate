@@ -101,6 +101,7 @@
 'Group uniquely assigned to user %(id)s': 'Grupo asignado únicamente al usuario %(id)s',
 'Groups': 'Grupos',
 'Hello World': 'Hola Mundo',
+'Hello World 2': 'Hello World 2',
 'Helping web2py': 'Ayudando a web2py',
 'Hit Ratio: **%(ratio)s%%** (**%(hits)s** %%{hit(hits)} and **%(misses)s** %%{miss(misses)})': 'Hit Ratio: **%(ratio)s%%** (**%(hits)s** %%{hit(hits)} and **%(misses)s** %%{miss(misses)})',
 'Home': 'Inicio',

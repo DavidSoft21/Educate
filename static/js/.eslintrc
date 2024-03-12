@@ -1,12 +1,12 @@
 {
   "overrides": [
     {
-      "files": ["**/*.js"],
+      "files": ["./static/js/*.js", "./static/js/*.jsx"],
       "parser": "espree",
       "extends": ["eslint:recommended"]
     },
     {
-      "files": ["**/*.ts"],
+      "files": ["./static/js/*.ts"],
       "parser": "@typescript-eslint/parser",
       "extends": [
         "eslint:recommended",

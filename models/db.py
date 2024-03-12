@@ -5,7 +5,8 @@
 # Auth is for authenticaiton and access control
 # -------------------------------------------------------------------------
 from gluon.contrib.appconfig import AppConfig
-from gluon.tools import Auth
+from gluon.tools import Auth, Service, PluginManager
+
 
 # -------------------------------------------------------------------------
 # This scaffolding model makes your app work on Google App Engine too
@@ -85,8 +86,12 @@ response.form_label_separator = ''
 # (more options discussed in gluon/tools.py)
 # -------------------------------------------------------------------------
 
+
+
 # host names must be a list of allowed host names (glob syntax allowed)
 auth = Auth(db, host_names=configuration.get('host.names'))
+service = Service()
+plugins = PluginManager()
 
 # -------------------------------------------------------------------------
 # create all tables needed by auth, maybe add a list of extra fields
@@ -119,11 +124,6 @@ response.meta.description = configuration.get('app.description')
 response.meta.keywords = configuration.get('app.keywords')
 response.meta.generator = configuration.get('app.generator')
 response.show_toolbar = configuration.get('app.toolbar')
-
-# -------------------------------------------------------------------------
-# your http://google.com/analytics id                                      
-# -------------------------------------------------------------------------
-response.google_analytics_id = configuration.get('google.analytics_id')
 
 # -------------------------------------------------------------------------
 # maybe use the scheduler
